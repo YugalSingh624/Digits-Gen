@@ -9,7 +9,7 @@ device = torch.device("cpu")
 
 # Load the trained generator
 generator = Generator().to(device)
-generator.load_state_dict(torch.load("cgan_digit_generator_from_collabe.pth", map_location=device))
+generator.load_state_dict(torch.load("cgan_digit_generator_kaggle.pth", map_location=device))
 generator.eval()
 
 # Streamlit UI
